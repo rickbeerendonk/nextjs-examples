@@ -1,0 +1,8 @@
+**/build/**
+**/build-storybook/**
+**/coverage/**
+**/lib/**
+**/node_modules/**
+**/setup/**
+**/temp/**
+**/__mocks__/**

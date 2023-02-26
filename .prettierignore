@@ -1,0 +1,23 @@
+#################
+## React Examples
+#################
+
+build/
+build-storybook/
+coverage/
+docs/
+lib/
+Issues/
+temp/
+
+#################
+## npm
+#################
+
+node_modules/
+
+#################
+## Vercel NEXT.js
+#################
+
+.next/

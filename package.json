@@ -1,0 +1,35 @@
+{
+  "name": "nextjs-examples",
+  "version": "1.0.0",
+  "description": "Examples for [NEXT.js](https://nextjs.org/).",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rickbeerendonk/nextjs-examples.git"
+  },
+  "author": "Rick Beerendonk",
+  "license": "EUPL-1.2",
+  "bugs": {
+    "url": "https://github.com/rickbeerendonk/nextjs-examples/issues"
+  },
+  "homepage": "https://github.com/rickbeerendonk/nextjs-examples#readme",
+  "scripts": {
+    "clean": "rimraf node_modules",
+    "eslint": "eslint . --ext .js,.jsx,.mjs --cache",
+    "eslint-fix": "eslint . --ext .js,.jsx,.mjs --cache --fix",
+    "prettier": "prettier --list-different '**/*.{json,js,jsx,html,md,mjs,mts,ts,tsx}'",
+    "prettier-fix": "prettier --write '**/*.{json,js,jsx,html,md,mjs,mts,ts,tsx}'",
+    "start": "node ./server/server.js",
+    "validate": "npm run eslint && npm run prettier",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "eslint": "8.33.0",
+    "eslint-plugin-jsx-a11y": "6.6.1",
+    "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "husky": "8.0.3",
+    "prettier": "2.8.3",
+    "rimraf": "4.1.2"
+  },
+  "dependencies": {  }
+}
