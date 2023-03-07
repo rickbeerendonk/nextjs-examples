@@ -12,6 +12,12 @@
     "url": "https://github.com/rickbeerendonk/nextjs-examples/issues"
   },
   "homepage": "https://github.com/rickbeerendonk/nextjs-examples#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run validate",
+      "pre-push": "npm run validate"
+    }
+  },
   "scripts": {
     "clean": "rimraf node_modules",
     "eslint": "eslint . --ext .js,.jsx,.mjs --cache",
