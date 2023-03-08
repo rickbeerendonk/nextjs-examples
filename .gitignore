@@ -1,5 +1,5 @@
 #################
-## React Examples
+## NEXTjs Examples
 #################
 
 .cache/
@@ -23,6 +23,7 @@ package-lock.json
 #################
 
 yarn.lock
+yarn-debug.log
 yarn-error.log
 
 #################
@@ -36,6 +37,15 @@ yarn-error.log
 #################
 
 .next/
+out/
+.vercel
+
+#################
+## TypeScript
+#################
+
+*.tsbuildinfo
+next-env.d.ts
 
 #################
 ## Other
