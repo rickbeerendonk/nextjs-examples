@@ -81,7 +81,7 @@ if (filePath && fs.statSync(filePath).isDirectory()) {
   if (packageConfigPath) {
     // Package.json config exists, so execute webpack
     console.log('package.json: ' + packageConfigPath);
-    childProcess.spawnSync('npm', ['start'], {
+    childProcess.spawnSync('npm', ['run', 'dev'], {
       cwd: path.dirname(packageConfigPath),
       shell: true,
       stdio: 'inherit'
