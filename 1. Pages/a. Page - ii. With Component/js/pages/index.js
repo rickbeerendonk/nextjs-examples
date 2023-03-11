@@ -1,7 +1,7 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2017 Rick Beerendonk          !*/
 
-import MyText from './MyText.js';
+import MyText from '../components/MyText';
 
 function Index() {
   return (
