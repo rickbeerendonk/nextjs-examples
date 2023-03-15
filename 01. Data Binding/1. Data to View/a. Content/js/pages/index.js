@@ -1,5 +1,5 @@
 /*! European Union Public License version 1.2 !*/
-/*! Copyright © 2017 Rick Beerendonk          !*/
+/*! Copyright © 2023 Rick Beerendonk          !*/
 
 function Index() {
   const name = 'React';
