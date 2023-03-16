@@ -1,8 +1,8 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2021 Rick Beerendonk          !*/
 
-function Index() {
+function Home() {
   return <h1>Hello Next.js!</h1>;
 }
 
-export default Index;
+export default Home;

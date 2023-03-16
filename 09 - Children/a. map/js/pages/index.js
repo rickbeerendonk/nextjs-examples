@@ -4,7 +4,7 @@
 import Greeting from '../components/Greeting';
 import List from '../components/List';
 
-function Index() {
+function Home() {
   return (
     <List>
       <Greeting name="Alexandra" />
@@ -14,4 +14,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Home;

@@ -1,7 +1,7 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2023 Rick Beerendonk          !*/
 
-function Index() {
+function Home() {
   const names = new Set(['A', 'B', 'C']);
 
   return (
@@ -16,4 +16,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Home;

@@ -3,7 +3,7 @@
 
 import Link from 'next/link';
 
-function Index() {
+function Home() {
   return (
     <>
       <h1>Page 1</h1>
@@ -12,4 +12,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Home;

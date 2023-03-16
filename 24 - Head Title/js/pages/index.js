@@ -4,7 +4,7 @@
 import Head from 'next/head';
 import MyText from './MyText.js';
 
-function Index() {
+function Home() {
   return (
     <>
       <Head>
@@ -18,4 +18,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Home;

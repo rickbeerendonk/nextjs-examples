@@ -3,7 +3,7 @@
 
 import React from 'react';
 
-function Index() {
+function Home() {
   // Use "useState()" instead of "let"
   // Why? React needs to know something has change
   // Here:
@@ -24,4 +24,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Home;

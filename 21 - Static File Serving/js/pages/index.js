@@ -3,7 +3,7 @@
 
 import Image from 'next/image';
 
-function Index() {
+function Home() {
   return (
     <>
       <h1>Static File Serving</h1>
@@ -19,4 +19,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Home;

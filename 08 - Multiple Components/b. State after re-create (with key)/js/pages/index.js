@@ -5,7 +5,7 @@ import React from 'react';
 
 import ClickMe from '../components/ClickMe';
 
-function Index() {
+function Home() {
   const [id, setId] = React.useState(0);
 
   function handleClick() {
@@ -21,4 +21,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Home;

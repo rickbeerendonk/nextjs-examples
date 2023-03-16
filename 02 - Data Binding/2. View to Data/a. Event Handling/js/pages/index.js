@@ -1,7 +1,7 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2023 Rick Beerendonk          !*/
 
-function Index() {
+function Home() {
   function handleChange(e) {
     alert(`Event handled.
 Target: ${e.target}
@@ -12,4 +12,4 @@ Data: ${e.nativeEvent.data}`);
   return <input onChange={handleChange} value="Hello React!" />;
 }
 
-export default Index;
+export default Home;

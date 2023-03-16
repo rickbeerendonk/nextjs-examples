@@ -3,7 +3,7 @@
 
 import ImportantAnchor from '../components/ImportantAnchor';
 
-function Index() {
+function Home() {
   return (
     <ImportantAnchor
       href="https://nextjs.org/"
@@ -16,4 +16,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Home;

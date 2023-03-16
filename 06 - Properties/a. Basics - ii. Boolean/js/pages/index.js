@@ -3,8 +3,8 @@
 
 import Greeting from '../components/Greeting';
 
-function Index() {
+function Home() {
   return <Greeting name="World" default />;
 }
 
-export default Index;
+export default Home;

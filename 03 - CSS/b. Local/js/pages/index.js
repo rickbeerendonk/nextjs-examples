@@ -3,8 +3,8 @@
 
 import styles from './index.module.css';
 
-function Index() {
+function Home() {
   return <h1 className={styles.hello}>Hello Next.js!</h1>;
 }
 
-export default Index;
+export default Home;

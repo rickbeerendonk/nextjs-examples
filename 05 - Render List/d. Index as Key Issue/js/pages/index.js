@@ -3,7 +3,7 @@
 
 import React from 'react';
 
-function Index() {
+function Home() {
   const [items, setItems] = React.useState(['one', 'two', 'three']);
 
   function insertTop() {
@@ -33,4 +33,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Home;

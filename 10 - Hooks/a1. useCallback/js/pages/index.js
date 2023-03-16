@@ -3,8 +3,8 @@
 
 import Parent from '../components/Parent';
 
-function Index() {
+function Home() {
   return <Parent />;
 }
 
-export default Index;
+export default Home;

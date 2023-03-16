@@ -3,8 +3,8 @@
 
 import ClickMe from '../components/ClickMe';
 
-function Index() {
+function Home() {
   return <ClickMe />;
 }
 
-export default Index;
+export default Home;

@@ -3,7 +3,7 @@
 
 import Greeting from '../components/Greeting';
 
-function Index() {
+function Home() {
   return (
     <Greeting
       greeting={new Date().getHours() < 12 ? 'Good morning' : 'Hello'}
@@ -12,4 +12,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Home;

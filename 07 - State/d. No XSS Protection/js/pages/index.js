@@ -3,8 +3,8 @@
 
 import GreetingEditor from '../components/GreetingEditor';
 
-function Index() {
+function Home() {
   return <GreetingEditor />;
 }
 
-export default Index;
+export default Home;

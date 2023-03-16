@@ -3,7 +3,7 @@
 
 import MyText from '../components/MyText';
 
-function Index() {
+function Home() {
   return (
     <h1>
       Hello <MyText text="Next.js" />!
@@ -11,4 +11,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Home;
