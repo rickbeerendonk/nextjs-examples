@@ -10,7 +10,7 @@ function Index() {
         String: <img alt="React" />
       </p>
       <p>
-        Non-string:{' '}
+        Non-string:
         <input type="number" disabled={false} min={0} max={maxValue} />
       </p>
       <p>
