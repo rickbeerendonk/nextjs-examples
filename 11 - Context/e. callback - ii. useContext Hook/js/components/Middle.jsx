@@ -8,10 +8,10 @@ import Bottom from './Bottom';
 
 function Middle() {
   return (
-    <React.Fragment>
+    <>
       <Bottom />
       <Switch />
-    </React.Fragment>
+    </>
   );
 }
 

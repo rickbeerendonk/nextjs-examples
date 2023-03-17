@@ -5,7 +5,7 @@ import React from 'react';
 
 function Greeting(props) {
   return (
-    <React.Fragment>
+    <>
       <h1
         style={
           ({ color: props.default ? 'red' : 'black' },
@@ -19,7 +19,7 @@ function Greeting(props) {
         <br />
         props.dark: {JSON.stringify(props.dark)}
       </p>
-    </React.Fragment>
+    </>
   );
 }
 

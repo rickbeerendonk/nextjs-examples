@@ -15,7 +15,7 @@ function Top(props) {
   }
 
   return (
-    <React.Fragment>
+    <>
       <ColorContext.Provider value={{ color: 'blue' }}>
         <ColorContext.Provider value={{ color }}>
           <Middle />
@@ -26,7 +26,7 @@ function Top(props) {
       </ColorContext.Provider>
 
       <Bottom />
-    </React.Fragment>
+    </>
   );
 }
 

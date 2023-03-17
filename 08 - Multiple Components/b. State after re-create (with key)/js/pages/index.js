@@ -13,11 +13,11 @@ function Home() {
   }
 
   return (
-    <React.Fragment>
+    <>
       <button onClick={handleClick}>Change ID</button>
       <br />
       <ClickMe key={id} />
-    </React.Fragment>
+    </>
   );
 }
 

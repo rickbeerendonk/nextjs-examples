@@ -13,10 +13,10 @@ function Home() {
   }
 
   return (
-    <React.Fragment>
+    <>
       <button onClick={handleShowHide}>{visible ? 'Hide' : 'Show'}</button>
       {visible && <MousePosition />}
-    </React.Fragment>
+    </>
   );
 }
 

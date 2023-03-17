@@ -14,10 +14,10 @@ class Middle extends React.Component {
   }
   render() {
     return (
-      <React.Fragment>
+      <>
         <Bottom />
         <Switch />
-      </React.Fragment>
+      </>
     );
   }
 }

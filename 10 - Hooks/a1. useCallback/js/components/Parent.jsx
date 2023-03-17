@@ -21,7 +21,7 @@ function Parent() {
   }, []);
 
   return (
-    <React.Fragment>
+    <>
       <div style={{ color: 'darkgray' }}>
         Open the console and observe the number of Child renders when clicking
         the button.
@@ -31,7 +31,7 @@ function Parent() {
       </div>
       <Child name="Without Hook" onClick={handleChildClick} />
       <Child name="With Hook" onClick={handleChildClickWithHook} />
-    </React.Fragment>
+    </>
   );
 }
 
