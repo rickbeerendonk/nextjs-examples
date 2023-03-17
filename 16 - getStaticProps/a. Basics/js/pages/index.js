@@ -7,7 +7,7 @@ function Home({ name }) {
 
 export async function getStaticProps() {
   return {
-    props: { name: 'Next.js' }
+    props: { name: new Date().toString() }
   };
 }
 
