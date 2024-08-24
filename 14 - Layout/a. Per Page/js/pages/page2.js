@@ -2,6 +2,7 @@
 /*! Copyright © 2023 Rick Beerendonk          !*/
 
 import Layout from '../components/layout';
+
 function Page2() {
   return (
     <Layout footer={<u>Alternative footer</u>}>
