@@ -25,17 +25,17 @@
     "prettier": "prettier --list-different '**/*.{json,js,jsx,html,md,mjs,mts,ts,tsx}'",
     "prettier-fix": "prettier --write '**/*.{json,js,jsx,html,md,mjs,mts,ts,tsx}'",
     "start": "node ./server/server.js",
-    "validate": "npm run eslint && npm run prettier",
-    "prepare": "husky install"
+    "test": "npm run eslint && npm run prettier",
+    "prepare": "husky"
   },
   "devDependencies": {
-    "eslint": "8.35.0",
-    "eslint-plugin-jsx-a11y": "6.7.1",
-    "eslint-plugin-react": "7.32.2",
-    "eslint-plugin-react-hooks": "4.6.0",
-    "husky": "8.0.3",
-    "prettier": "2.8.4",
-    "rimraf": "4.3.1"
+    "eslint": "8.55.0",
+    "eslint-plugin-jsx-a11y": "6.10.0",
+    "eslint-plugin-react": "7.37.1",
+    "eslint-plugin-react-hooks": "4.6.2",
+    "husky": "9.1.6",
+    "prettier": "3.3.3",
+    "rimraf": "6.0.1"
   },
   "dependencies": {
     "mime-types": "2.1.35"
