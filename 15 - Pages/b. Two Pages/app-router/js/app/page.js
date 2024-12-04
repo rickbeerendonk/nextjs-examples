@@ -3,6 +3,10 @@
 
 import Link from 'next/link';
 
+// <Link> allows for:
+// - Client-side navigation
+// - Prefetching
+
 export default function Home() {
   return (
     <>
