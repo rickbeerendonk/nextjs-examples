@@ -1,6 +1,10 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2024 Rick Beerendonk          !*/
 
+export const metadata = {
+  title: 'Title through metadata'
+};
+
 export default function Home() {
   return (
     <>
