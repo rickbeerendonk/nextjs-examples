@@ -12,7 +12,25 @@ import { useState } from 'react';
 // This can happen if a SSR - ed Client Component used
 
 export default function Home() {
+  // Server: navigator = {}
   const [online, setOnline] = useState(navigator.onLine);
 
-  return <h1>You are {online ? 'online' : 'offline'}</h1>;
+  function renderNavigatorProps() {
+    let items = [];
+    for (let prop in navigator) {
+      items.push(
+        <li key={prop}>
+          {prop}: {JSON.stringify(navigator[prop])}
+        </li>
+      );
+    }
+    return <ul>{items}</ul>;
+  }
+
+  return (
+    <>
+      <h1>You are {online ? 'online' : 'offline'}</h1>
+      {renderNavigatorProps()}
+    </>
+  );
 }
