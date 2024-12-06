@@ -3,7 +3,8 @@
 
 import ServerData from './components/ServerData';
 
-// React will cache fetching the same URL twice within the same request.
+// React will memoize fetching the same URL twice within the same request.
+// A new unmemoized fetch will be made on each new request.
 
 export default async function Page() {
   let res = await fetch('http://localhost:3100');
