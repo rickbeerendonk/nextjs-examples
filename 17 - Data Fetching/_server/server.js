@@ -6,6 +6,18 @@ const http = require('http');
 let requestCount = 0;
 
 const server = http.createServer((req, res) => {
+  // Set CORS headers for all requests
+  res.setHeader('Access-Control-Allow-Origin', '*'); // Allow requests from any origin
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS'); // Specify allowed HTTP methods
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type'); // Allow specific headers
+
+  // Handle OPTIONS preflight requests
+  if (req.method === 'OPTIONS') {
+    res.writeHead(204);
+    res.end();
+    return;
+  }
+
   if (/* req.method === 'GET' && */ req.url === '/') {
     const response = {
       name: 'Server',
