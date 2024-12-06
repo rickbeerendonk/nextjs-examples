@@ -4,11 +4,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
-import ServerData from './components/ServerData';
-
-// React will memoize fetching the same URL twice within the same request.
-// A new unmemoized fetch will be made on each new request.
+import ServerData from '../components/ServerData';
 
 export default function Page() {
   const [obj, setObj] = useState({});
@@ -23,7 +19,7 @@ export default function Page() {
 
   return (
     <>
-      <h1>Home at {new Date().toLocaleTimeString()}</h1>
+      <h1>Sub at {new Date().toLocaleTimeString()}</h1>
       <p style={{ color: 'gray' }}>
         Start the server in the _server folder first
       </p>
@@ -34,7 +30,6 @@ export default function Page() {
         <li>Request number: {obj.requestNr}</li>
       </ul>
       <ServerData />
-      <Link href="/sub">Go to Sub</Link>
     </>
   );
 }

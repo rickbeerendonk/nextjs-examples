@@ -1,38 +1,31 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2024 Rick Beerendonk          !*/
 
-'use client';
-
 import { useEffect, useState } from 'react';
-import ServerData from '../components/ServerData';
+import styles from './ServerData.module.css';
 
-// React will memoize fetching the same URL twice within the same request.
-// A new unmemoized fetch will be made on each new request.
-
-export default function Page() {
+export default function ServerData() {
   const [obj, setObj] = useState({});
 
   useEffect(() => {
     async function fetchObj() {
-      let res = await fetch('http://localhost:3100');
+      // Opt individual fetch into caching (force-cache) or no caching (no-store)
+      let res = await fetch('http://localhost:3100', { cache: 'no-store' });
+      //let res = await fetch('http://localhost:3100', { cache: 'force-cache' });
       setObj(await res.json());
     }
     fetchObj();
   }, []);
 
   return (
-    <>
-      <h1>Sub at {new Date().toLocaleTimeString()}</h1>
-      <p style={{ color: 'gray' }}>
-        Start the server in the _server folder first
-      </p>
+    <div className={styles.div}>
+      <h2>Server Data at {new Date().toLocaleTimeString()}</h2>
       <div>Server response</div>
       <ul>
         <li>Name: {obj.name}</li>
         <li>Time: {obj.time}</li>
         <li>Request number: {obj.requestNr}</li>
       </ul>
-      <ServerData />
-    </>
+    </div>
   );
 }
