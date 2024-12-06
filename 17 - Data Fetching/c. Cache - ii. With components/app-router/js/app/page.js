@@ -3,6 +3,8 @@
 
 import ServerData from './components/ServerData';
 
+// React will cache fetching the same URL twice within the same request.
+
 export default async function Page() {
   let res = await fetch('http://localhost:3100');
   let obj = await res.json();
