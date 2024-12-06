@@ -16,6 +16,7 @@ import { useState } from 'react';
 export default function Home() {
   const [online, setOnline] = useState(
     typeof window === 'undefined' ? true : navigator.onLine
+    // navigator && navigator.onLine === undefined ? true : navigator.onLine
   );
 
   return <h1>You are {online ? 'online' : 'offline'}</h1>;
