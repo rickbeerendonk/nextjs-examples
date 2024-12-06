@@ -6,7 +6,7 @@ const http = require('http');
 let requestCount = 0;
 
 const server = http.createServer((req, res) => {
-  if (req.method === 'GET' && req.url === '/') {
+  if (/* req.method === 'GET' && */ req.url === '/') {
     const response = {
       name: 'Server',
       time: new Date().toISOString(),
