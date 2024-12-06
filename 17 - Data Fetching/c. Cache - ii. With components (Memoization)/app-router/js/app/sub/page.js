@@ -1,8 +1,7 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2024 Rick Beerendonk          !*/
 
-import Link from 'next/link';
-import ServerData from './components/ServerData';
+import ServerData from '../components/ServerData';
 
 // React will memoize fetching the same URL twice within the same request.
 // A new unmemoized fetch will be made on each new request.
@@ -12,7 +11,7 @@ export default async function Page() {
   let obj = await res.json();
   return (
     <>
-      <h1>Home at {new Date().toLocaleTimeString()}</h1>
+      <h1>Sub at {new Date().toLocaleTimeString()}</h1>
       <p style={{ color: 'gray' }}>
         Start the server in the _server folder first
       </p>
@@ -23,7 +22,6 @@ export default async function Page() {
         <li>Request number: {obj.requestNr}</li>
       </ul>
       <ServerData />
-      <Link href="/sub">Go to Sub</Link>
     </>
   );
 }
