@@ -1,10 +1,10 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2024 Rick Beerendonk          !*/
 
-// 1. Import headers
+// 2. Import headers
 import { headers } from 'next/headers';
 
-// 2. Async component
+// 1. Async component
 export default async function NotFound() {
   // 3. Get headers
   const headersList = await headers();
