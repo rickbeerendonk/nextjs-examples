@@ -6,6 +6,9 @@ export const metadata = {
   description: 'Demo app'
 };
 
+// Use slots:
+// - Folder names starting with '@' are reserved for slots
+// - Slots don't have a route
 export default function RootLayout({ children, first, second }) {
   return (
     <html lang="en">
