@@ -11,7 +11,7 @@ export default function Home() {
   const [count, setCount] = useState(0);
   return (
     <>
-      <h1>Server Component</h1>
+      <h1>Client Component</h1>
       <button onClick={() => setCount(c => c + 1)}>
         Clicked {count} times
       </button>
