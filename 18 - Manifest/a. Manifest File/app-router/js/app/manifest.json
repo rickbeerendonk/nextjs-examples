@@ -1,0 +1,15 @@
+{
+  "short_name": "Manifest App",
+  "name": "NextJS Manifest App",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "theme_color": "#d676ff",
+  "display": "standalone"
+}
