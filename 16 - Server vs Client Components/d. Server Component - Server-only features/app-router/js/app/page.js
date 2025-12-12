@@ -73,18 +73,6 @@ export default async function Home() {
         </p>
         <p>Server Time: {serverTime}</p>
       </section>
-
-      <section
-        style={{ margin: '20px 0', padding: '10px', border: '1px solid #ccc' }}
-      >
-        <h2>Key Benefits</h2>
-        <ul>
-          <li>✅ Direct access to backend resources (database, files, APIs)</li>
-          <li>✅ Keep sensitive data and logic on the server</li>
-          <li>✅ Reduce client-side JavaScript bundle</li>
-          <li>✅ Improve performance for users on slow devices/connections</li>
-        </ul>
-      </section>
     </>
   );
 }
