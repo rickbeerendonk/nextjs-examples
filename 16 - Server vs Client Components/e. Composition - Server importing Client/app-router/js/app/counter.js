@@ -28,10 +28,6 @@ export default function Counter({ initialValue = 0 }) {
         Increment
       </button>
       <button onClick={() => setCount(initialValue)}>Reset</button>
-      <p style={{ fontSize: '12px', color: '#666', marginTop: '10px' }}>
-        💡 This component uses useState and onClick - requires &apos;use
-        client&apos; directive
-      </p>
     </div>
   );
 }

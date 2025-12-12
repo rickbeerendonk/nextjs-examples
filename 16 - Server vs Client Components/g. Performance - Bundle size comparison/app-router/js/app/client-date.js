@@ -47,11 +47,6 @@ export default function ClientDateDisplay() {
           />
         </label>
       </div>
-
-      <p style={{ fontSize: '12px', color: '#666', marginTop: '10px' }}>
-        💡 The date-fns library (~200KB) is included in the client bundle
-        because this component needs interactivity.
-      </p>
     </div>
   );
 }

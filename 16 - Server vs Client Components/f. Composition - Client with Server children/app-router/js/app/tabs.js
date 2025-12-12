@@ -71,11 +71,6 @@ export default function Tabs({ children }) {
           </div>
         )}
       </div>
-
-      <p style={{ fontSize: '12px', color: '#666', marginTop: '10px' }}>
-        💡 This Client Component manages tab state and accepts children as a
-        prop
-      </p>
     </div>
   );
 }

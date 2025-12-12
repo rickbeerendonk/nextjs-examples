@@ -30,10 +30,6 @@ export default function ServerDateDisplay() {
       <p>
         <strong>Days until:</strong> {daysUntil} days
       </p>
-      <p style={{ fontSize: '12px', color: '#666', marginTop: '10px' }}>
-        💡 The date-fns library (~200KB) is used on the server. The client only
-        receives the formatted HTML output.
-      </p>
     </div>
   );
 }

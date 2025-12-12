@@ -103,69 +103,6 @@ export default function Home() {
           </tbody>
         </table>
       </div>
-
-      <div
-        style={{
-          margin: '20px 0',
-          padding: '15px',
-          backgroundColor: '#e0f2fe',
-          borderRadius: '8px'
-        }}
-      >
-        <h2>Teaching Points</h2>
-        <ul>
-          <li>
-            📦 <strong>Server Components:</strong> Heavy libraries run on
-            server, output is HTML
-          </li>
-          <li>
-            📦 <strong>Client Components:</strong> All dependencies are included
-            in the client bundle
-          </li>
-          <li>
-            ⚡ <strong>Performance Impact:</strong>
-            <ul>
-              <li>Smaller JavaScript bundles = Faster downloads</li>
-              <li>Less parsing/execution = Faster Time to Interactive (TTI)</li>
-              <li>Better performance on slow networks and devices</li>
-            </ul>
-          </li>
-          <li>
-            🎯 <strong>Best Practice:</strong> Use Server Components by default,
-            Client Components only when needed
-          </li>
-          <li>
-            💡 <strong>Tip:</strong> Run <code>npm run build</code> to see
-            actual bundle sizes in your project
-          </li>
-        </ul>
-      </div>
-
-      <div
-        style={{
-          margin: '20px 0',
-          padding: '15px',
-          backgroundColor: '#fef3c7',
-          borderRadius: '8px'
-        }}
-      >
-        <h2>Try This</h2>
-        <ol>
-          <li>Open DevTools → Network tab</li>
-          <li>Reload the page</li>
-          <li>Look at the JavaScript files being downloaded</li>
-          <li>
-            Notice that date-fns is only loaded for the interactive component
-          </li>
-        </ol>
-        <p style={{ fontSize: '12px', color: '#666', marginTop: '10px' }}>
-          💡 Teaching Note: This demonstrates one of the key benefits of React
-          Server Components. By keeping heavy computations and libraries on the
-          server, we significantly reduce the amount of JavaScript shipped to
-          users, resulting in faster page loads and better user experience,
-          especially on slower devices and networks.
-        </p>
-      </div>
     </>
   );
 }

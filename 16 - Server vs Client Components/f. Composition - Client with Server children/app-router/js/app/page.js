@@ -37,10 +37,6 @@ async function ServerContent() {
           <li key={index}>{user}</li>
         ))}
       </ul>
-      <p style={{ fontSize: '12px', color: '#666' }}>
-        💡 This component is rendered on the server, then passed to the Client
-        Component
-      </p>
     </div>
   );
 }
@@ -77,43 +73,6 @@ export default async function Home() {
       <Tabs>
         <ServerContent />
       </Tabs>
-
-      <div
-        style={{
-          margin: '20px 0',
-          padding: '15px',
-          backgroundColor: '#f0f0f0',
-          borderRadius: '8px'
-        }}
-      >
-        <h2>Teaching Points</h2>
-        <ul>
-          <li>
-            🚫 Client Components <strong>cannot import</strong> Server
-            Components directly
-          </li>
-          <li>
-            ✅ But they <strong>can receive</strong> Server Components as
-            children/props
-          </li>
-          <li>✅ This creates a component tree: Server → Client → Server</li>
-          <li>✅ The parent Server Component renders both components</li>
-          <li>
-            ✅ This pattern is useful for:
-            <ul>
-              <li>Interactive wrappers (tabs, accordions, modals)</li>
-              <li>Client-side layouts with server-side content</li>
-              <li>Keeping data fetching in Server Components</li>
-            </ul>
-          </li>
-        </ul>
-        <p style={{ fontSize: '12px', color: '#666', marginTop: '10px' }}>
-          💡 Teaching Note: This is the &quot;composition pattern&quot; or
-          &quot;slot pattern&quot;. It&apos;s a powerful way to combine the
-          benefits of both Server and Client Components. The client component
-          doesn&apos;t know or care that its children are Server Components.
-        </p>
-      </div>
     </>
   );
 }

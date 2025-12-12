@@ -41,11 +41,6 @@ export default async function Home() {
         </p>
         <p>Next.js Version: {packageData.dependencies.next}</p>
         <p>React Version: {packageData.dependencies.react}</p>
-        <p style={{ fontSize: '12px', color: '#666' }}>
-          💡 Teaching Note: This uses Node.js &apos;fs&apos; module which ONLY
-          works in Server Components. Client components cannot access the file
-          system.
-        </p>
       </section>
 
       <section
@@ -56,11 +51,6 @@ export default async function Home() {
           <strong>Demo:</strong> Accessing server-side environment variables
         </p>
         <p>NODE_ENV: {serverEnv}</p>
-        <p style={{ fontSize: '12px', color: '#666' }}>
-          💡 Teaching Note: Server components can access ALL environment
-          variables. Only NEXT_PUBLIC_* variables are exposed to client
-          components. This keeps secrets (API keys, database credentials) safe.
-        </p>
       </section>
 
       <section
@@ -71,11 +61,6 @@ export default async function Home() {
           <strong>Demo:</strong> Computing 20! (factorial) on the server
         </p>
         <p>Result: {heavyComputation.toLocaleString()}</p>
-        <p style={{ fontSize: '12px', color: '#666' }}>
-          💡 Teaching Note: Heavy computations run on the server and don&apos;t
-          block the client. The client receives the final HTML with the computed
-          result. This improves performance on low-powered devices.
-        </p>
       </section>
 
       <section
@@ -87,11 +72,6 @@ export default async function Home() {
           the server
         </p>
         <p>Server Time: {serverTime}</p>
-        <p style={{ fontSize: '12px', color: '#666' }}>
-          💡 Teaching Note: This timestamp is generated once on the server
-          during rendering. It won&apos;t update on the client. For client-side
-          timestamps, you&apos;d need a Client Component.
-        </p>
       </section>
 
       <section
